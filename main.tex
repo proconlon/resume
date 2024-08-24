@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+     % \textit{\small#3} & \textit{\small #4} \\ -- removed ITALICS
+        {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape James Conlon}\\    \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faLocationArrow\ Rutherford, NJ~
+    \href{mailto:proconlon@proton.me}{\raisebox{-0.2\height}\faEnvelope\  \underline{proconlon@proton.me}} ~ 
+    \href{https://github.com/proconlon}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/proconlon}} ~
+    \href{https://linkedin.com/in/proconlon/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/proconlon}} ~
+    \raisebox{-0.1\height}\faPhone\ 201-600-1119
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Boston University}{Expected May 2026}
+      {B.S. in Computer Engineering with CS Minor; GPA: 3.39}{Boston, MA}
+    %\resumeSubheading
+    %  {Rutherford High School}{2018 -- 2022}
+    %  {}{} 
+  \resumeSubHeadingListEnd
+
+
+
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Computer Organization
+                \item Intro Logic Design
+               % \item Intro Software Eng
+                \item Applied Algorithms
+                \item Operating Systems
+                \item Computer Networking
+                \item Differential Equations
+               % \item Probability, Statistics \& Data Science
+                \item Software Design
+               % \item[]\emph{* Fall 2024}
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {ei$^3$ : Industrial Internet Intelligence}{June 2024 -- Present}
+    {Embedded Software \& Security Intern}{Pearl River, NY}
+    \resumeItemListStart
+
+    \resumeItem{Developed custom integrations for MQTT data collection, an OpenVPN connector, and a REST API endpoint, enabling competitor devices to integrate with ei$^3$ cloud solution and edge device hardware.}
+    \resumeItem{Simulated a factory network with OPC-UA data collectors, visualization tools, and PLCs to evaluate how edge devices enhance machine efficiency and shop floor effectiveness for operators.}
+    \resumeItem{Benchmarked ei$^3$'s industrial IoT suite against key competitors, analyzing technical capabilities and user experience to identify strengths and areas for improvement in Remote Access/VPN and Data Collection features.}
+    \resumeItem{Conducted business and SWOT analysis with documentation, providing strategic insights for marketing, sales, and product development teams.}
+
+
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+      {BU Information Services \& Technology}{August 2022 -- Present}
+      {IT Support Specialist}{Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Diagnosed and resolved a range of hardware and software issues, including Windows/Mac/Linux support, academic software, networking, and identity verification.}
+       % \resumeItem{Utilized phone, ServiceNow, and in-person support to respond to service tickets prioritizing issues as needed.}
+       % \resumeItem{Maintained clear, empathetic communication and effective problem-solving, contributing to a positive relation to technology campus-wide.}
+
+      \resumeItemListEnd
+
+   % \resumeSubheading
+   %   {Eros Cafe}{March 2021 -- August 2023}
+   %   {Restaurant Server}{East Rutherford, NJ}
+   %   \resumeItemListStart
+   %     \resumeItem{Developed strong communication and interpersonal skills in a dynamic environment.}
+   %     \resumeItem{Enhanced ability to work under pressure and multitask effectively.}
+   %   \resumeItemListEnd
+
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{FPGA-Based \underline{\href{https://github.com/proconlon/fpga-synth}{Keyboard Synthesizer}}} $|$ \emph{Verilog, FPGA, Digital Signal Processing, Team Project}}{December 2023}
+        \resumeItemListStart
+          \resumeItem{Developed a digital synthesizer on Artix-7 FPGA, enabling simulation of musical notes and octaves.}
+          \resumeItem{Designed a module for generating PWM signals with variable duty cycles to simulate sound waveforms including square, sine, and triangle waves.}
+          \resumeItem{Integrated PS/2 keyboard input for control, along with a 7-segment display and audio output for feedback.}
+          \resumeItem{Collaborated with team to address challenges such as sound generation and timing issues related to waveform indexing.}
+        \resumeItemListEnd
+          \vspace{-13pt}
+
+
+          \resumeProjectHeading
+          {\textbf{Android App: \underline{\href{https://github.com/proconlon/BostonWhereAreU}{Boston Where Are U}}} $|$ \emph{Android SDK, Java, Team Project}}{December 2023}          \resumeItemListStart
+            \resumeItem{Programmed an Android game for BU students that challenges players to identify local landmarks using a custom built map interface.}
+            \resumeItem{Set deadlines for project development, integrated UI elements and backend logic.}
+            \resumeItem{Implemented key features including custom overlays, TouchImageView map integration, and backend game management system with Android navigation components for fragment management.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+     \resumeProjectHeading
+          {\textbf{\underline{\href{https://github.com/proconlon/RoomOccupancyMonitor}{Room Occupancy Monitor}}} $|$ \emph{Arduino, C++, Onshape, Team Project}}{April 2024}
+          \resumeItemListStart
+            \resumeItem{Collaborated on development of device to monitor the occupancy of a room to prevent overcrowding and create a mechanical barrier to entry.}
+            \resumeItem{Primarily responsible for coding occupancy tracking, integrating various sensors (infrared, ultrasonic) and input/output devices to maximize accuracy and reliability.}
+            \resumeItem{Developed a heuristic algorithm to manage ambiguous sensor data and varying traffic patterns, enhancing the accuracy of room occupancy monitoring.}
+          \resumeItemListEnd
+       %   \vspace{-13pt}  
+
+
+%    \resumeProjectHeading
+%          {\textbf{Home Automation} $|$ \emph{Python, Networking, IoT, }}{Present}
+%          \resumeItemListStart
+%            \resumeItem{Developed and manage a home automation network, integrating over 10 IoT devices using MQTT and HTTP protocols for offline operation and security.}
+%            \resumeItem{Proficient in selecting and configuring IoT hardware components including sensors (temperature, motion), smart switches, and lighting controls. Experience with microcontrollers (Arduino, Raspberry Pi) for device automation and control.}
+%          \resumeItemListEnd
+%          \vspace{-13pt}
+            
+%   \resumeProjectHeading
+%         {\textbf{National Cyber Scholarship} $|$ \emph{Cybersecurity}}{2021}
+%         \resumeItemListStart
+%            \resumeItem{Demonstrated proficiency across various cybersecurity domains such as digital forensics, cryptographic challenges, and both proactive and reactive security strategies.}
+%            \resumeItem{Was top scoring in the CTF competition, demonstrating skill in identifying and exploiting security vulnerabilities, and devising effective countermeasures.}
+%         \resumeItemListEnd
+%         \vspace{-13pt}
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}   % REMOVE the -13 vspace for the last entry and replace with this -15
+
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Java, Verilog, Python, Bash} \\
+    % \textbf{Framework}{: Django, React} \\
+     \textbf{Networking and IoT}{: VPN Configuration, MQTT, REST API, TCP/IP, Wireshark} \\
+     \textbf{Tools and Software}{: Linux, Arduino, MATLAB, Android SDK, Onshape, Kali Linux, Git} \\
+     \textbf{Other Skills}{: Industrial IoT, Network Troubleshooting, Technical Writing} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+%\section{Leadership / Extracurricular}
+%    \resumeSubHeadingListStart
+%        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%            \resumeItemListStart
+%                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%            \resumeItemListEnd
+        
+%    \resumeSubHeadingListEnd
+
+
+\end{document}
