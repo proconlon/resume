@@ -2,8 +2,6 @@
 📍 Rutherford, NJ | 📧 [proconlon@proton.me](mailto:proconlon@proton.me) |  
 🔗 [GitHub](https://github.com/proconlon) | 🔗 [LinkedIn](https://linkedin.com/in/proconlon/) | 📞 201-600-1119
 
----
-
 ## Education
 **Boston University** — *Expected May 2026*  
 **B.S. in Computer Engineering**  
@@ -11,8 +9,6 @@
 
 **Relevant Coursework (GPA: 3.47):**  
 Distributed Systems (Go), Embedded Systems, Operating Systems, Cybersecurity, Client-Server Software  
-
----
 
 ## Experience
 
@@ -27,8 +23,6 @@ Distributed Systems (Go), Embedded Systems, Operating Systems, Cybersecurity, Cl
 ### **BU Information Services and Technology**  
 *IT Support Specialist* | *Aug 2022 – Dec 2024* | *Boston, MA*  
 - Diagnosed and resolved a range of hardware and software issues, including Windows/Mac/Linux support, academic software, networking, and identity verification.  
-
----
 
 ## Projects
 
@@ -50,8 +44,6 @@ Distributed Systems (Go), Embedded Systems, Operating Systems, Cybersecurity, Cl
 - Programmed an Android game for BU students that challenges players to identify local landmarks using a custom-built map interface.  
 - Set deadlines for project development, integrated UI elements and backend logic.  
 - Implemented key features including custom overlays, TouchImageView map integration, and backend game management with Android navigation components for fragment management.  
-
----
 
 ## Technical Skills
 - **Languages:** Java, Python, Go, C (systems-level), Bash, Verilog  
