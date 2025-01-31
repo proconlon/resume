@@ -21,7 +21,7 @@
 \usepackage{fontawesome5}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
+\setlength{\columnsep}{-1pt} 
 \input{glyphtounicode}
 
 
@@ -87,6 +87,17 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+% ADDED ALL IMPORTANT MINOR 
+\newcommand{\resumeEducationSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\ 
+      {\small#3} & {\small #4} \\ 
+      {\small#5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -135,75 +146,64 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeEducationSubheading
       {Boston University}{Expected May 2026}
-      {B.S. in Computer Engineering with CS Minor; GPA: 3.39}{Boston, MA}
-    %\resumeSubheading
-    %  {Rutherford High School}{2018 -- 2022}
-    %  {}{} 
+      {B.S. in Computer Engineering}{Boston, MA}
+      {Minor in Computer Science}
+
+    \item[]
+      \small \textbf{Relevant Coursework (GPA: 3.47)}: \\
+      \small Distributed Systems (Go), Embedded Systems, Operating Systems, Cybersecurity, Client-Server Software
   \resumeSubHeadingListEnd
 
+\vspace{-16pt}
 
-
-
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{4}
-            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-                \item\small Computer Organization
-                \item Intro Logic Design
-               % \item Intro Software Eng
-                \item Applied Algorithms
-                \item Operating Systems
-                \item Computer Networking
-                \item Differential Equations
-               % \item Probability, Statistics \& Data Science
-                \item Software Design
-               % \item[]\emph{* Fall 2024}
-            \end{itemize}
-        \end{multicols}
-        \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
-
+%  %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             %\begin{itemize}[itemsep=-5pt, parsep=3pt]
+%             \begin{itemize}[itemsep=-5pt, leftmargin=0.15in, parsep=3pt]
+%                 \item\small Cybersecurity
+%                 \item Operating Systems
+%                 \item Distributed Systems
+%                 \item Applied Algorithms
+%                 \item Embedded Systems
+%                 \item Computer Networking
+%                 \item Client-Server~Software
+%                 \item Software~Design~(C\#/.NET)
+%                 %\item Computer Organization
+%                 %\item Probability, Statistics \& Data Science
+%                % \item[]\emph{* Fall 2024}
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-    {ei$^3$ : Industrial Internet Intelligence}{June 2024 -- Present}
-    {Embedded Software \& Security Intern}{Pearl River, NY}
+    {ei$^3$ : Industrial Internet Intelligence}{Jun 2024 -- Present}
+    {Embedded Software and Security Intern}{Pearl River, NY}
     \resumeItemListStart
 
-    \resumeItem{Developed custom integrations for MQTT data collection, a Linux-based OpenVPN connector, and a REST API endpoint, enabling competitor devices to integrate with ei$^3$ cloud solution and hardware edge devices.}
-    \resumeItem{Simulated a factory network with OPC-UA data collectors, visualization tools, and PLCs to evaluate how edge devices enhance machine efficiency and shop floor effectiveness for operators.}
-    \resumeItem{Developed and deployed a Java extension for an industrial edge device, integrating VPN service and data collection directly with ei$^3$'s cloud platform.}
-    \resumeItem{Conducted security and penetration testing to assess ei$^3$ and competitors' VPN/Remote Access features and adherence to risk management frameworks, including Zero Trust Architecture (ZTA) and ISO/IEC compliance in industrial settings.}
-    \resumeItem{Benchmarked ei$^3$'s industrial IoT suite against key competitors, analyzing technical capabilities and user experience to identify strengths and areas for improvement in Remote Access/VPN and Data Collection features.}
-    \resumeItem{Conducted business and SWOT analysis with documentation, providing strategic insights for marketing, sales, and product development teams.}
+        \resumeItem{Developed a multi-instance OpenVPN solution in Docker (Python, Java, Bash), enabling advanced network routing (fwmark, policy routing, NAT) to secure legacy industrial devices in production.}
+        \resumeItem{Assisted with software rollout on hardware at customer locations by training support staff and documenting the onboarding processes for the product.}
+        \resumeItem{Integrated a containerized remote-access system with certificate management (OpenSSL) and IP allocation databases, ensuring future scalability.}
+        \resumeItem{Applied modern security best practices (Zero Trust, ISO/IEC frameworks) to safeguard older protocols and modernize industrial networks.}
+        \resumeItem{Simulated factory networks (OPC-UA, MODBUS, PLCs), and performed competitive benchmarking against key competitors to evaluate technical capabilities, user experience, and security.}
 
     \resumeItemListEnd
 
 
     \resumeSubheading
-      {BU Information Services \& Technology}{August 2022 -- Present}
+      {BU Information Services and Technology}{Aug 2022 -- Dec 2024}
       {IT Support Specialist}{Boston, MA}
       \resumeItemListStart
         \resumeItem{Diagnosed and resolved a range of hardware and software issues, including Windows/Mac/Linux support, academic software, networking, and identity verification.}
-       % \resumeItem{Utilized phone, ServiceNow, and in-person support to respond to service tickets prioritizing issues as needed.}
-       % \resumeItem{Maintained clear, empathetic communication and effective problem-solving, contributing to a positive relation to technology campus-wide.}
-
       \resumeItemListEnd
-
-   % \resumeSubheading
-   %   {Eros Cafe}{March 2021 -- August 2023}
-   %   {Restaurant Server}{East Rutherford, NJ}
-   %   \resumeItemListStart
-   %     \resumeItem{Developed strong communication and interpersonal skills in a dynamic environment.}
-   %     \resumeItem{Enhanced ability to work under pressure and multitask effectively.}
-   %   \resumeItemListEnd
-
     
   \resumeSubHeadingListEnd
 \vspace{-16pt}
@@ -213,7 +213,7 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-        {\textbf{FPGA-Based \underline{\href{https://github.com/proconlon/fpga-synth}{Keyboard Synthesizer}}} $|$ \emph{Verilog, FPGA, Digital Signal Processing, Team Project}}{December 2023}
+        {\textbf{FPGA-Based \underline{\href{https://github.com/proconlon/fpga-synth}{Keyboard Synthesizer}}} $|$ \emph{Verilog, FPGA, Digital Signal Processing, Team Project}}{Dec 2023}
         \resumeItemListStart
           \resumeItem{Developed a digital synthesizer on Artix-7 FPGA, enabling simulation of musical notes and octaves.}
           \resumeItem{Designed a module for generating PWM signals with variable duty cycles to simulate sound waveforms including square, sine, and triangle waves.}
@@ -222,22 +222,24 @@
         \resumeItemListEnd
           \vspace{-13pt}
 
-
-          \resumeProjectHeading
-          {\textbf{Android App: \underline{\href{https://github.com/proconlon/BostonWhereAreU}{Boston Where Are U}}} $|$ \emph{Android SDK, Java, Team Project}}{December 2023}          \resumeItemListStart
-            \resumeItem{Programmed an Android game for BU students that challenges players to identify local landmarks using a custom built map interface.}
-            \resumeItem{Set deadlines for project development, integrated UI elements and backend logic.}
-            \resumeItem{Implemented key features including custom overlays, TouchImageView map integration, and backend game management system with Android navigation components for fragment management.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-
      \resumeProjectHeading
-          {\textbf{\underline{\href{https://github.com/proconlon/RoomOccupancyMonitor}{Room Occupancy Monitor}}} $|$ \emph{Arduino, C++, Onshape, Team Project}}{April 2024}
+          {\textbf{\underline{\href{https://github.com/proconlon/RoomOccupancyMonitor}{Room Occupancy Monitor}}} $|$ \emph{Arduino, C++, Onshape, Team Project}}{Apr 2024}
           \resumeItemListStart
             \resumeItem{Collaborated on development of device to monitor the occupancy of a room to prevent overcrowding and create a mechanical barrier to entry.}
             \resumeItem{Primarily responsible for coding occupancy tracking, integrating various sensors (infrared, ultrasonic) and input/output devices to maximize accuracy and reliability.}
             \resumeItem{Developed a heuristic algorithm to manage ambiguous sensor data and varying traffic patterns, enhancing the accuracy of room occupancy monitoring.}
           \resumeItemListEnd
+     \vspace{-13pt}
+
+    \resumeProjectHeading
+          {\textbf{Android App: \underline{\href{https://github.com/proconlon/BostonWhereAreU}{Boston Where Are U}}} $|$ \emph{Android SDK, Java, Team Project}}{Dec 2023}       
+          \resumeItemListStart
+            \resumeItem{Programmed an Android game for BU students that challenges players to identify local landmarks using a custom built map interface.}
+            \resumeItem{Set deadlines for project development, integrated UI elements and backend logic.}
+            \resumeItem{Implemented key features including custom overlays, TouchImageView map integration, and backend game management with Android navigation components for fragment management.}
+          \resumeItemListEnd
+
+
        %   \vspace{-13pt}  
 
 
@@ -265,14 +267,16 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, Java, Verilog, Python, Bash} \\
-    % \textbf{Framework}{: Django, React} \\
-     \textbf{Networking and IoT}{: VPN Configuration, MQTT, REST API, TCP/IP, Wireshark} \\
-     \textbf{Tools and Software}{: Linux, Arduino, MATLAB, Android SDK, Onshape, Kali Linux, Git} \\
-     \textbf{Other Skills}{: Industrial IoT, Network Troubleshooting, Technical Writing} \\
+     \textbf{Languages}{: Java, Python, Go, C (systems-level), Bash, Verilog} \\
+     %\textbf{Framework}{: Spring Boot, React} \\
+     \textbf{Networking and Security}{: Docker, OpenVPN, NAT/VLAN/Routing, PKI/Certificate Management, Wireshark} \\
+     \textbf{Tools and Platforms}{: Linux (Debian), Docker Compose, Android SDK, Kali Linux (for security labs/CTFs), Git} \\
+     %\textbf{Other Skills}{: Virtualization, Containerization, Network Troubleshooting} \\
     }}
  \end{itemize}
  \vspace{-16pt}
+
+
 
 
 %-----------INVOLVEMENT---------------
