@@ -19,9 +19,6 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt} 
 \input{glyphtounicode}
 
 
@@ -44,11 +41,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -58,7 +55,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -72,53 +69,34 @@
   }
 }
 
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
-  }
-}
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-     % \textit{\small#3} & \textit{\small #4} \\ -- removed ITALICS
-        {\small#3} & {\small #4} \\
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
-% ADDED ALL IMPORTANT MINOR 
-\newcommand{\resumeEducationSubheading}[5]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\ 
-      {\small#3} & {\small #4} \\ 
-      {\small#5} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-
     \end{tabular*}\vspace{-7pt}
 }
 
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -130,118 +108,140 @@
 \begin{document}
 
 %----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-\begin{center}
-    {\Huge \scshape James Conlon}\\    \vspace{1pt}
-    \small
-    \raisebox{-0.1\height}\faLocationArrow\ Rutherford, NJ~
-    \href{mailto:proconlon@proton.me}{\raisebox{-0.2\height}\faEnvelope\  \underline{proconlon@proton.me}} ~ 
-    \href{https://github.com/proconlon}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/proconlon}} ~
-    \href{https://linkedin.com/in/proconlon/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/proconlon}} ~
-    \raisebox{-0.1\height}\faPhone\ 201-600-1119
-    \vspace{-8pt}
-\end{center}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \href{https://linkedin.com/in/proconlon/}{\textbf{\Large James Conlon}} &
+  \href{https://github.com/proconlon}{\raisebox{-0.1\height}\faGithub\ github.com/proconlon} \\
+  
+  \small
+  \href{mailto:proconlon52@gmail.com}{\raisebox{-0.1\height}\faEnvelope\ proconlon52@gmail.com}
+  ~$\cdot$~
+  \raisebox{-0.1\height}\faMapPin\ NYC Metro Area
+  &
+  \href{https://linkedin.com/in/proconlon/}{\raisebox{-0.1\height}\faLinkedin\ linkedin.com/in/proconlon} \\
+\end{tabular*}
+
+% \begin{center}
+%     {\Huge \scshape James Conlon} \\    
+%     \vspace{1pt}
+%     \small
+%     \raisebox{-0.1\height}\faLocationArrow\ NYC Metro Area~
+%     \href{https://github.com/proconlon}{\raisebox{-0.2\height}\faGithub\ {github.com/proconlon}}~
+%     \href{https://linkedin.com/in/proconlon/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/proconlon}}~
+%     \href{mailto:proconlon52@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {proconlon52@gmail.com}}~ 
+%     \vspace{-8pt}
+% \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeEducationSubheading
-      {Boston University}{Expected May 2026}
-      {B.S. in Computer Engineering}{Boston, MA}
-      {Minor in Computer Science}
-
-    \item[]
-      \small \textbf{Relevant Coursework (GPA: 3.47)}: \\
-      \small Distributed Systems (Go), Embedded Systems, Operating Systems, Cybersecurity, Client-Server Software
+    \resumeSubheading
+      {Boston University}{Boston, MA}
+      {B.S. in Computer Engineering, Minor in Computer Science (GPA: 3.56)}{Sep 2022 -- May 2026}
   \resumeSubHeadingListEnd
 
-\vspace{-16pt}
-
-%  %------RELEVANT COURSEWORK-------
-% \section{Relevant Coursework}
-%     %\resumeSubHeadingListStart
-%         \begin{multicols}{4}
-%             %\begin{itemize}[itemsep=-5pt, parsep=3pt]
-%             \begin{itemize}[itemsep=-5pt, leftmargin=0.15in, parsep=3pt]
-%                 \item\small Cybersecurity
-%                 \item Operating Systems
-%                 \item Distributed Systems
-%                 \item Applied Algorithms
-%                 \item Embedded Systems
-%                 \item Computer Networking
-%                 \item Client-Server~Software
-%                 \item Software~Design~(C\#/.NET)
-%                 %\item Computer Organization
-%                 %\item Probability, Statistics \& Data Science
-%                % \item[]\emph{* Fall 2024}
-%             \end{itemize}
-%         \end{multicols}
-%         \vspace*{2.0\multicolsep}
-%     %\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-    {ei$^3$ : Industrial Internet Intelligence}{Jun 2024 -- Present}
-    {Embedded Software and Security Intern}{Pearl River, NY}
-    \resumeItemListStart
-
-        \resumeItem{Developed a multi-instance OpenVPN solution in Docker (Python, Java, Bash), enabling advanced network routing (fwmark, policy routing, NAT) to secure legacy industrial devices in production.}
-        \resumeItem{Assisted with software rollout on hardware at customer locations by training support staff and documenting the onboarding processes for the product.}
-        \resumeItem{Integrated a containerized remote-access system with certificate management (OpenSSL) and IP allocation databases, ensuring future scalability.}
-        \resumeItem{Applied modern security best practices (Zero Trust, ISO/IEC frameworks) to safeguard older protocols and modernize industrial networks.}
-        \resumeItem{Simulated factory networks (OPC-UA, MODBUS, PLCs), and performed competitive benchmarking against key competitors to evaluate technical capabilities, user experience, and security.}
-
+      {Embedded Software and Security Intern}{June 2025 -- Present}
+      {ei$^3$ : Industrial Internet Intelligence}{Pearl River, NY}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a novel OpenVPN-based TAP server solution using Linux network namespaces, policy routing, and multiple ``virtual proxy'' VPN clients to resolve client-side NAT and subnet overlap issues for legacy industrial devices.}
+        \resumeItem{Developed a comprehensive Python migration service to automate industrial router (Ewon, mGuard) configuration by downloading, validating, and uploading new profiles, ensuring zero-downtime migration while parsing and preserving full customer network topologies.}
+        \resumeItem{Collaborated with internal support teams to author the SOP for automated remote deployments, establishing a safe migration process that preserves complex customer network topologies like VLANs and static routes.}
+        \resumeItem{Designed and owned the REST API and data model (Python/Flask) for managing device configurations and firmware, allowing future expansion for new device models or new device-specific features.}
     \resumeItemListEnd
-
+      
+    \resumeSubheading
+      {Embedded Software and Security Intern}{June 2024 -- June 2025}
+      {ei$^3$ : Industrial Internet Intelligence \normalfont\small{\textit{(FT summer, PT during semesters)}}}{Pearl River, NY}
+      \resumeItemListStart
+        \resumeItem{Engineered a configurable OpenVPN TUN server in Docker, designed for deployment on edge hardware to establish a migration path for third-party industrial devices onto the ei$^3$ platform.}   
+        % \resumeItem{Developed a multi-instance OpenVPN solution in Docker (Python, Bash), enabling advanced network routing (fwmark, policy routing, NAT) to secure legacy industrial devices in production.}
+        % \resumeItem{Assisted with software rollout on hardware at customer locations by training support staff and documenting the onboarding processes for the product.}
+        % \resumeItem{Integrated a containerized remote-access system with certificate management (OpenSSL) and IP allocation databases, ensuring future scalability.}
+        % \resumeItem{Applied modern security best practices (Zero Trust, ISO/IEC frameworks) to safeguard older protocols and modernize industrial networks.}
+        \resumeItem{Simulated factory networks (OPC-UA, MODBUS, PLCs), and performed competitive benchmarking against key competitors to evaluate technical capabilities, user experience, and security.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
 
     \resumeSubheading
-      {BU Information Services and Technology}{Aug 2022 -- Dec 2024}
-      {IT Support Specialist}{Boston, MA}
+      {IT Support Specialist}{Aug 2022 -- Dec 2024}
+      {BU Information Services and Technology}{Boston, MA}
       \resumeItemListStart
-        \resumeItem{Diagnosed and resolved a range of hardware and software issues, including Windows/Mac/Linux support, academic software, networking, and identity verification.}
-      \resumeItemListEnd
-    
+        \resumeItem{Diagnosed and resolved hardware/software issues: Windows/Mac/Linux, networking, and academic software.}
+    \resumeItemListEnd
+
   \resumeSubHeadingListEnd
-\vspace{-16pt}
+
 
 %-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
 \section{Projects}
-    \vspace{-5pt}
     \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{\underline{\href{https://github.com/proconlon/pm-edge-data-logger}{Predictive Maintenance Edge Data Logger}}} $|$ \emph{C, Python, AWS S3, Tailscale, BeagleBone}}{May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed an end-to-end connected edge device data logger on a BeagleBone Black, using C for data acquisition from an OPC-UA server and Python for ML and cloud integration.}
+        \resumeItem{Designed a dual-rate logging system to minimize cloud costs, capturing high-frequency data locally for ML model training and low-frequency data for long-term storage in AWS S3.}
+        \resumeItem{Implemented secure remote access using Tailscale, air-gapping a factory network while enabling remote device management and data retrieval.}
+        \resumeItem{Deployed a local Python ML model for predictive maintenance, analyzing high-frequency data to forecast equipment failures and automatically send email alerts to operators.}
+      \resumeItemListEnd
+
       \resumeProjectHeading
-        {\textbf{FPGA-Based \underline{\href{https://github.com/proconlon/fpga-synth}{Keyboard Synthesizer}}} $|$ \emph{Verilog, FPGA, Digital Signal Processing, Team Project}}{Dec 2023}
+        {\textbf{\underline{\href{https://github.com/proconlon/fpga-synth}{FPGA-Based Keyboard Synthesizer}}} $|$ \emph{Verilog, FPGA, Digital Signal Processing, Team Project}}{Dec 2023}
         \resumeItemListStart
           \resumeItem{Developed a digital synthesizer on Artix-7 FPGA, enabling simulation of musical notes and octaves.}
           \resumeItem{Designed a module for generating PWM signals with variable duty cycles to simulate sound waveforms including square, sine, and triangle waves.}
           \resumeItem{Integrated PS/2 keyboard input for control, along with a 7-segment display and audio output for feedback.}
           \resumeItem{Collaborated with team to address challenges such as sound generation and timing issues related to waveform indexing.}
         \resumeItemListEnd
-          \vspace{-13pt}
 
-     \resumeProjectHeading
-          {\textbf{\underline{\href{https://github.com/proconlon/RoomOccupancyMonitor}{Room Occupancy Monitor}}} $|$ \emph{Arduino, C++, Onshape, Team Project}}{Apr 2024}
-          \resumeItemListStart
-            \resumeItem{Collaborated on development of device to monitor the occupancy of a room to prevent overcrowding and create a mechanical barrier to entry.}
-            \resumeItem{Primarily responsible for coding occupancy tracking, integrating various sensors (infrared, ultrasonic) and input/output devices to maximize accuracy and reliability.}
-            \resumeItem{Developed a heuristic algorithm to manage ambiguous sensor data and varying traffic patterns, enhancing the accuracy of room occupancy monitoring.}
-          \resumeItemListEnd
-     \vspace{-13pt}
-
-    \resumeProjectHeading
-          {\textbf{Android App: \underline{\href{https://github.com/proconlon/BostonWhereAreU}{Boston Where Are U}}} $|$ \emph{Android SDK, Java, Team Project}}{Dec 2023}       
-          \resumeItemListStart
-            \resumeItem{Programmed an Android game for BU students that challenges players to identify local landmarks using a custom built map interface.}
-            \resumeItem{Set deadlines for project development, integrated UI elements and backend logic.}
-            \resumeItem{Implemented key features including custom overlays, TouchImageView map integration, and backend game management with Android navigation components for fragment management.}
-          \resumeItemListEnd
-
-
-       %   \vspace{-13pt}  
-
+     % \resumeProjectHeading
+     %      {\textbf{\underline{\href{https://github.com/proconlon/RoomOccupancyMonitor}{Room Occupancy Monitor}}} $|$ \emph{Arduino, C++, Onshape, Team Project}}{Apr 2024}
+     %      \resumeItemListStart
+     %        \resumeItem{Collaborated on development of device to monitor the occupancy of a room to prevent overcrowding and create a mechanical barrier to entry.}
+     %        \resumeItem{Primarily responsible for coding occupancy tracking, integrating various sensors (infrared, ultrasonic) and input/output devices to maximize accuracy and reliability.}
+     %        \resumeItem{Developed a heuristic algorithm to manage ambiguous sensor data and varying traffic patterns, enhancing the accuracy of room occupancy monitoring.}
+     %      \resumeItemListEnd
 
 %    \resumeProjectHeading
 %          {\textbf{Home Automation} $|$ \emph{Python, Networking, IoT, }}{Present}
@@ -251,45 +251,36 @@
 %          \resumeItemListEnd
 %          \vspace{-13pt}
             
-%   \resumeProjectHeading
-%         {\textbf{National Cyber Scholarship} $|$ \emph{Cybersecurity}}{2021}
-%         \resumeItemListStart
-%            \resumeItem{Demonstrated proficiency across various cybersecurity domains such as digital forensics, cryptographic challenges, and both proactive and reactive security strategies.}
-%            \resumeItem{Was top scoring in the CTF competition, demonstrating skill in identifying and exploiting security vulnerabilities, and devising effective countermeasures.}
-%         \resumeItemListEnd
-%         \vspace{-13pt}
-          
     \resumeSubHeadingListEnd
-\vspace{-15pt}   % REMOVE the -13 vspace for the last entry and replace with this -15
 
 
-  %-----------PROGRAMMING SKILLS-----------
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R} \\
+%      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+%      \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+%     }}
+%  \end{itemize}
+
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, Go, C (systems-level), Bash, Verilog} \\
-     %\textbf{Framework}{: Spring Boot, React} \\
-     \textbf{Networking and Security}{: Docker, OpenVPN, NAT/VLAN/Routing, PKI/Certificate Management, Wireshark} \\
-     \textbf{Tools and Platforms}{: Linux (Debian), Docker Compose, Android SDK, Kali Linux (for security labs/CTFs), Git} \\
-     %\textbf{Other Skills}{: Virtualization, Containerization, Network Troubleshooting} \\
+     \textbf{Languages}{: Python, Go, C (systems-level), Bash, Verilog} \\
+     \textbf{Framework \& Tools}{: Flask, Linux (Debian/Alpine/RHEL/Fedora), OpenSSL} \\
+     \textbf{DevOps \& Virtualization}{: Docker, Docker Compose, Git, CI/CD (GitHub Actions), Jira} \\
+     \textbf{Networking and Security}{: TCP/IP, OpenVPN, NAT, VLANs, Policy Routing, PKI, Wireshark} \\
+
+     % \textbf{Courses}{: Distributed Systems, Embedded Systems, Operating Systems, Cybersecurity, Client-Server Software, Intro Databases} \\
+     \textbf{Courses}{: {Systems: \{Distributed, Embedded, Operating\}}, Cybersecurity, Client-Server Software, Intro Databases} \\
+
     }}
  \end{itemize}
  \vspace{-16pt}
 
-
-
-
-%-----------INVOLVEMENT---------------
-%\section{Leadership / Extracurricular}
-%    \resumeSubHeadingListStart
-%        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-%            \resumeItemListStart
-%                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-%                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-%                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-%            \resumeItemListEnd
-        
-%    \resumeSubHeadingListEnd
-
-
+%-------------------------------------------
 \end{document}
+
